@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Yashaswini - Full Stack Developer</title>
+    <link rel="stylesheet" href="test.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+</head>
+<body>
+    <header id="header">
+        <div class="container">
+            <div class="header-content">
+                <h1>Yashaswini Addnki</h1>
+                <h1>Full Stack Developer</h1>
+            </div>
+            <nav id="nav">
+                <ul>
+                    <li><a href="#about" data-section="about">About</a></li>
+                    <li><a href="#experience" data-section="experience">Experience</a></li>
+                    <li><a href="#education" data-section="education">Education</a></li>
+                    <li><a href="#skills" data-section="skills">Skills</a></li>
+                    <li><a href="#projects" data-section="projects">Projects</a></li>
+                    <li><a href="#certifications" data-section="certifications">Certifications</a></li>
+                    <li><a href="#interests" data-section="interests">Interests</a></li>
+                </ul>
+            </nav>
+            <button id="theme-toggle" aria-label="Toggle theme">☀️</button>
+        </div>
+    </header>
+
+    <main>
+        <section id="about" class="section">
+            <div class="container">
+                <h2>About Me</h2>
+                <div class="greeting-container">
+                    <p id="dynamic-greeting" class="greeting"></p>
+                </div>
+                <p class="intro">
+                    I'm a passionate <strong>Full Stack Developer</strong> with over 5 years of experience 
+                    building <em>scalable web applications</em>. I specialize in modern JavaScript frameworks 
+                    and have a keen eye for <mark class="highlight-word">user experience design</mark>. 
+                    My expertise includes <abbr title="Application Programming Interface">API</abbr> development, 
+                    <abbr title="User Interface">UI</abbr>/<abbr title="User Experience">UX</abbr> design, 
+                    and <abbr title="DevOps practices for continuous integration and deployment">DevOps</abbr> practices.
+                </p>
+            </div>
+        </section>
+
+        <section id="experience" class="section">
+            <div class="container">
+                <h2>Work Experience</h2>
+                <div class="experience-list">
+                    <article class="job-entry">
+                        <h3>Senior Full Stack Developer</h3>
+                        <p class="company">Micro Solutions</p>
+                        <p class="duration">2022 - Present</p>
+                        <ol class="responsibilities">
+                            <li class="tooltip-trigger" data-tooltip="Led a team of 5 developers using Agile methodologies">Lead development of enterprise web applications</li>
+                            <li class="tooltip-trigger" data-tooltip="Reduced API response time by 40% through optimization">Optimize application performance and scalability</li>
+                            <li class="tooltip-trigger" data-tooltip="Implemented automated testing reducing bugs by 60%">Implement CI/CD pipelines and testing strategies</li>
+                        </ol>
+                        <details>
+                            <summary>Additional Details</summary>
+                            <p>Mentored junior developers and established coding standards that improved team productivity by 30%.</p>
+                        </details>
+                    </article>
+
+                    <article class="job-entry">
+                        <h3>Frontend Developer</h3>
+                        <p class="company">Techno Tron</p>
+                        <p class="duration">2020 - 2022</p>
+                        <ol class="responsibilities">
+                            <li class="tooltip-trigger" data-tooltip="Built responsive interfaces for 50+ components">Develop responsive user interfaces</li>
+                            <li class="tooltip-trigger" data-tooltip="Collaborated with designers using Figma and Adobe XD">Collaborate with design teams</li>
+                            <li class="tooltip-trigger" data-tooltip="Integrated with 15+ third-party APIs">Integrate third-party APIs and services</li>
+                        </ol>
+                        <details>
+                            <summary>Additional Details</summary>
+                            <p>Contributed to a 200% increase in user engagement through improved UI/UX design.</p>
+                        </details>
+                    </article>
+
+                    <article class="job-entry">
+                        <h3>Junior Web Developer</h3>
+                        <p class="company">Proton Agency</p>
+                        <p class="duration">2019 - 2020</p>
+                        <ol class="responsibilities">
+                            <li class="tooltip-trigger" data-tooltip="Built 25+ client websites using various technologies">Build client websites and applications</li>
+                            <li class="tooltip-trigger" data-tooltip="Provided 24/7 technical support for critical issues">Provide technical support and maintenance</li>
+                            <li class="tooltip-trigger" data-tooltip="Learned 5+ new frameworks in first year">Learn and adapt to new technologies</li>
+                        </ol>
+                        <details>
+                            <summary>Additional Details</summary>
+                            <p>Quickly mastered multiple frameworks and became the go-to person for complex technical challenges.</p>
+                        </details>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="education" class="section">
+            <div class="container">
+                <h2>Education</h2>
+                <button id="sort-gpa" class="sort-button">Sort by GPA</button>
+                <div class="table-container">
+                    <table id="education-table">
+                        <thead>
+                            <tr>
+                                <th>Logo</th>
+                                <th>Degree</th>
+                                <th>Institution</th>
+                                <th>Graduation Date</th>
+                                <th>GPA</th>
+                                <th>Achievements</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr data-gpa="3.8">
+                                <td><div class="logo-placeholder" data-institution="State University">JNTU</div></td>
+                                <td>Bachelor of Engineering in Computer Science</td>
+                                <td>JNTU state university</td>
+                                <td>2023</td>
+                                <td>7.35</td>
+                                <td>Recognized  for academic excellence with tution support from  start government</td>
+                            </tr>
+                            <tr data-gpa="3.9">
+                                <td><div class="logo-placeholder" data-institution="Tech Institute">LIU</div></td>
+                                <td>Master's in Computer Science</td>
+                                <td>Long Island University</td>
+                                <td>2024</td>
+                                <td>3.9</td>
+                                <td>Currently pursuing with merit standing(top % of class)</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="section">
+            <div class="container">
+                <h2>Skills</h2>
+                <div class="skills-controls">
+                    <button id="skill-toggle" class="skill-level-toggle">Show: All Skills</button>
+                </div>
+                <fieldset class="skills-group">
+                    <legend>Frontend Technologies</legend>
+                    <div class="skill-item" data-level="advanced">
+                        <label for="html-skill">HTML/CSS</label>
+                        <progress id="html-skill" value="0" max="100" data-target="95">95%</progress>
+                        <span class="skill-percentage">95%</span>
+                    </div>
+                    <div class="skill-item" data-level="advanced">
+                        <label for="js-skill">JavaScript</label>
+                        <progress id="js-skill" value="0" max="100" data-target="90">90%</progress>
+                        <span class="skill-percentage">90%</span>
+                    </div>
+                    <div class="skill-item" data-level="intermediate">
+                        <label for="react-skill">React</label>
+                        <progress id="react-skill" value="0" max="100" data-target="85">85%</progress>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                </fieldset>
+
+                <fieldset class="skills-group">
+                    <legend>Backend Technologies</legend>
+                    <div class="skill-item" data-level="advanced">
+                        <label for="node-skill">Node.js</label>
+                        <progress id="node-skill" value="0" max="100" data-target="88">88%</progress>
+                        <span class="skill-percentage">88%</span>
+                    </div>
+                    <div class="skill-item" data-level="intermediate">
+                        <label for="python-skill">Python</label>
+                        <progress id="python-skill" value="0" max="100" data-target="75">75%</progress>
+                        <span class="skill-percentage">75%</span>
+                    </div>
+                    <div class="skill-item" data-level="beginner">
+                        <label for="go-skill">Go</label>
+                        <progress id="go-skill" value="0" max="100" data-target="45">45%</progress>
+                        <span class="skill-percentage">45%</span>
+                    </div>
+                </fieldset>
+
+                <fieldset class="skills-group">
+                    <legend>Database & Tools</legend>
+                    <div class="skill-item" data-level="intermediate">
+                        <label for="sql-skill">SQL</label>
+                        <progress id="sql-skill" value="0" max="100" data-target="80">80%</progress>
+                        <span class="skill-percentage">80%</span>
+                    </div>
+                    <div class="skill-item" data-level="intermediate">
+                        <label for="git-skill">Git</label>
+                        <progress id="git-skill" value="0" max="100" data-target="85">85%</progress>
+                        <span class="skill-percentage">85%</span>
+                    </div>
+                    <div class="skill-item" data-level="beginner">
+                        <label for="docker-skill">Docker</label>
+                        <progress id="docker-skill" value="0" max="100" data-target="60">60%</progress>
+                        <span class="skill-percentage">60%</span>
+                    </div>
+                </fieldset>
+            </div>
+        </section>
+
+        <section id="projects" class="section">
+            <div class="container">
+                <h2>Projects</h2>
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="javascript">JavaScript</button>
+                    <button class="filter-btn" data-filter="react">React</button>
+                    <button class="filter-btn" data-filter="node">Node.js</button>
+                    <button class="filter-btn" data-filter="python">Python</button>
+                </div>
+                <div class="projects-grid">
+                    <article class="project-card" data-technologies="javascript,react,node">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://images.pexels.com/photos/270348/pexels-photo-270348.jpeg?auto=compress&cs=tinysrgb&w=400" alt="E-commerce Platform" class="project-image">
+                                <h3>E-commerce Platform</h3>
+                                <p class="project-tech">React, Node.js, MongoDB</p>
+                            </div>
+                            <div class="card-back">
+                                <dl class="project-details">
+                                    <dt>Description</dt>
+                                    <dd>Full-stack e-commerce solution with payment integration, inventory management, and admin dashboard.</dd>
+                                    <dt>Technologies</dt>
+                                    <dd>React, Node.js, Express, MongoDB, Stripe API</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-technologies="javascript,react">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://images.pexels.com/photos/590020/pexels-photo-590020.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Task Management App" class="project-image">
+                                <h3>Task Management App</h3>
+                                <p class="project-tech">React, Firebase</p>
+                            </div>
+                            <div class="card-back">
+                                <dl class="project-details">
+                                    <dt>Description</dt>
+                                    <dd>Collaborative task management application with real-time updates and team collaboration features.</dd>
+                                    <dt>Technologies</dt>
+                                    <dd>React, Firebase, Material-UI</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+
+                    <article class="project-card" data-technologies="python,javascript">
+                        <div class="card-inner">
+                            <div class="card-front">
+                                <img src="https://images.pexels.com/photos/590022/pexels-photo-590022.jpeg?auto=compress&cs=tinysrgb&w=400" alt="Data Visualization Dashboard" class="project-image">
+                                <h3>Data Visualization Dashboard</h3>
+                                <p class="project-tech">Python, D3.js</p>
+                            </div>
+                            <div class="card-back">
+                                <dl class="project-details">
+                                    <dt>Description</dt>
+                                    <dd>Interactive dashboard for visualizing complex datasets with multiple chart types and filtering options.</dd>
+                                    <dt>Technologies</dt>
+                                    <dd>Python, Flask, D3.js, PostgreSQL</dd>
+                                </dl>
+                            </div>
+                        </div>
+                    </article>
+                </div>
+            </div>
+        </section>
+
+        <section id="certifications" class="section">
+            <div class="container">
+                <h2>Certifications & Achievements</h2>
+                <dl class="certifications-list">
+                    <dt class="certification-item featured-cert">
+                        <div class="cert-badge">
+                            <span class="badge-text">AWS Certified Solutions Architect</span>
+                            <span class="badge-year">2023</span>
+                        </div>
+                    </dt>
+                    <dd>Professional-level certification demonstrating expertise in designing distributed systems on AWS.</dd>
+                    
+                    <dt class="certification-item">Google Cloud Professional Developer</dt>
+                    <dd>Certified in developing scalable applications on Google Cloud Platform.</dd>
+                    
+                    <dt class="certification-item">MongoDB Certified Developer</dt>
+                    <dd>Expertise in MongoDB database design, development, and administration.</dd>
+                    
+                    <dt class="certification-item">Scrum Master Certification</dt>
+                    <dd>Certified Scrum Master with experience leading agile development teams.</dd>
+                </dl>
+            </div>
+        </section>
+
+        <section id="interests" class="section">
+            <div class="container">
+                <h2>Interests & Hobbies</h2>
+                <div class="interests-gallery">
+                    <figure class="interest-item" data-interest="photography">
+                        <img src="https://images.pexels.com/photos/90946/pexels-photo-90946.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Photography equipment">
+                        <figcaption>Photography</figcaption>
+                    </figure>
+                    
+                    <figure class="interest-item" data-interest="hiking">
+                        <img src="https://images.pexels.com/photos/691668/pexels-photo-691668.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Mountain hiking trail">
+                        <figcaption>Hiking</figcaption>
+                    </figure>
+                    
+                    <figure class="interest-item" data-interest="music">
+                        <img src="https://images.pexels.com/photos/164821/pexels-photo-164821.jpeg?auto=compress&cs=tinysrgb&w=300" alt="Guitar and music equipment">
+                        <figcaption>Music</figcaption>
+                    </figure>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer id="footer" class="section">
+        <div class="container">
+            <p class="closing-statement">Let's Connect!</p>
+            <p>Ready to collaborate on your next project? I'd love to hear from you.</p>
+        </div>
+        <button id="back-to-top">
+            <i class="fa fa-angle-double-up" style="font-size:48px;color:rgb(16, 121, 225)"></i>
+        </button>
+    </footer>
+
+    <div id="interest-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <h3 id="modal-title"></h3>
+            <div id="modal-body"></div>
+        </div>
+    </div>
+    <script src="test.js"></script>
+</body>
+</html>
